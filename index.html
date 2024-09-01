@@ -7,30 +7,41 @@
     <title>Seanmentum App</title>
   </head>
   <body>
-    <form class="hidden" id="login-form">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="what is your name?"
-      />
-      <input type="submit" value="Log In" />
-    </form>
-
-    <h2 id="clock">00:00:00</h2>
-    <h1 id="greeting" class="hidden"></h1>
-    <form id="todo-form">
-      <input type="text" placeholder="Write a To Do and Press Enter" required />
-    </form>
-    <ul id="todo-list"></ul>
-
-    <div id="quotes">
-      <span></span>
-    </div>
-
     <div id="weather">
       <span></span>
-      <span></span>
+      <div>
+        <i class="fa-solid fa-location-dot" style="color: #fcfcfd"></i>
+        <span></span>
+      </div>
+    </div>
+
+    <main>
+      <h2 id="clock">00:00:00</h2>
+
+      <div class="loginclass">
+        <form class="hidden" id="login-form">
+          <input
+            required
+            maxlength="15"
+            type="text"
+            placeholder="what is your name?"
+          />
+          <input type="submit" value="Continue" />
+        </form>
+      </div>
+
+      <h1 id="greeting" class="hidden"></h1>
+
+      <div id="quotes">
+        <span></i></span>
+      </div>
+    </main>
+
+    <div>
+      <form id="todo-form">
+        <input type="text" placeholder="Write Todays to do" required />
+      </form>
+      <ul id="todo-list"></ul>
     </div>
 
     <script src="js/greetings.js"></script>
@@ -39,5 +50,9 @@
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
+    <script
+      src="https://kit.fontawesome.com/dc9d125c68.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

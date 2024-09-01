@@ -1,3 +1,146 @@
-.hidden {
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab&display=swap');
+@import "reset.css";
 
-    display: none;}
+body{
+        margin: 0px;
+        padding: 0px;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #weather {
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        margin-right: 30px;
+        color : white;
+        font-size: 16px;    
+        font-weight: 300;
+        opacity: 0.8;
+        line-height:20px;
+        margin-top: 20px;
+        text-align: right;}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin-top: 50px, 0px;}
+
+#login-form input::placeholder, #greeting, #login-form input[type="text"]{
+    color: white;
+    font-size: 45px;    
+    font-weight: 500;
+    margin-top: 80px;
+    }
+    
+
+.hidden {
+    display: none !important;
+    }
+
+#clock { font-size: 100px;
+    font-weight: 800;
+    color: white;
+    opacity: 0.7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+#login-form {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+#login-form input[type="text"] {
+    margin-left: -60px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border: 0.3 solid;
+    border-color: white;
+    background-color: transparent;
+    width: 130%;
+    height: 55px;
+    text-align: center;
+    box-sizing: border-box;}
+
+   
+    #login-form input::placeholder, #greeting, #login-form input[type="text"]{
+        color: white;
+        font-size: 45px;    
+        font-weight: 500;
+        margin-top: 80px;
+    }
+    
+
+    #login-form input[type="submit"] {
+        cursor: pointer;
+        border: 0.3 solid;
+        border-color: white;
+        border-radius: 50px;
+        background-color: transparent;
+        width: 150px;
+        color: white;
+        font-size: 30px;
+        font-weight: 500;
+        margin-top:30px;
+        margin-left: 160px;
+    }
+
+    #todo-form input[type="text"] {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border: 0.3 solid;
+        border-color: white;
+        background-color: transparent;
+        width: 170px;
+        height: 10px;
+        display: flex;
+        align-items: flex-end;
+        margin-top: -30px;
+        margin-left: 50px;
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+
+    #todo-form input[type="text"], 
+    #todo-form input::placeholder{
+        color: white;
+        font-size: 20px;    
+        font-weight: 200;
+}
+
+    #todo-list {
+        color: white;
+        font-size: 20px;    
+        font-weight: 300;
+        margin-left: 50px;
+        line-height: 30px;
+    }
+
+    #todo-list button{
+        background-color: transparent;
+        border: none;
+        font-size: 18px;
+    }
+
+
+    #quotes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 50px;
+        color : white;
+        font-size: 30px;    
+        font-weight: 400;
+        opacity: 0.8;
+    }
